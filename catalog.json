@@ -1,0 +1,93 @@
+{
+  "tools": [
+    {
+      "name": "WindowConfig (host)",
+      "description": "Janela host das GGTools + contrato IToolPanel. Base para os demais paineis.",
+      "id": "com.ggtools.windowconfig",
+      "gitUrl": "https://github.com/GazGamesOrganization/GGTools_WindowConfig.git",
+      "dependencies": []
+    },
+    {
+      "name": "Accessibility",
+      "description": "Framework de acessibilidade: fonte, alto contraste, legendas, locucao e daltonismo (URP).",
+      "id": "com.ggtools.accessibility",
+      "gitUrl": "https://github.com/GazGamesOrganization/GGTools.Accessibility.git",
+      "dependencies": [
+        "com.ggtools.windowconfig",
+        "com.ggtools.tmproultilitis",
+        "com.ggtools.spriteultilitis"
+      ]
+    },
+    {
+      "name": "AudioConfig",
+      "description": "Mixagem de audio por grupos do AudioMixer, presets e AudioManager em runtime.",
+      "id": "com.ggtools.audioconfig",
+      "gitUrl": "https://github.com/GazGamesOrganization/GGTools_AudioConfig.git",
+      "dependencies": [
+        "com.ggtools.windowconfig"
+      ]
+    },
+    {
+      "name": "SceneManager",
+      "description": "Gerencia cenas do Build Settings: reordenar, toggle, abrir e play a partir de uma cena.",
+      "id": "com.ggtools.scenemanager",
+      "gitUrl": "https://github.com/GazGamesOrganization/GGTools_SceneManager.git",
+      "dependencies": [
+        "com.ggtools.windowconfig"
+      ]
+    },
+    {
+      "name": "BuildTools",
+      "description": "Assistente de build guiado (identidade, runtime, versionamento) + VersionOverlay.",
+      "id": "com.ggtools.buildtools",
+      "gitUrl": "https://github.com/GazGamesOrganization/GGTools_BuildTools.git",
+      "dependencies": [
+        "com.ggtools.windowconfig"
+      ]
+    },
+    {
+      "name": "Localization",
+      "description": "Localizacao de texto TMP (CSV/XML) com TextLocalizationManager e painel na Config Window.",
+      "id": "com.ggtools.localization",
+      "gitUrl": "https://github.com/GazGamesOrganization/GGTools_Localization.git",
+      "dependencies": [
+        "com.ggtools.windowconfig"
+      ]
+    },
+    {
+      "name": "Subtitle",
+      "description": "Sistema de legendas/dialogo: parsing CSV, typewriter TMP, paginacao e progressao por audio.",
+      "id": "com.ggtools.subtitle",
+      "gitUrl": "https://github.com/GazGamesOrganization/GG.ToolsSubtitle.git",
+      "dependencies": []
+    },
+    {
+      "name": "SpriteUltilitis",
+      "description": "Utilidades de sprite: carregar e cachear Sprites, SpriteAtlas e sprites do atlas.",
+      "id": "com.ggtools.spriteultilitis",
+      "gitUrl": "https://github.com/GazGamesOrganization/GG.ToolsSpriteUltilitis.git",
+      "dependencies": []
+    },
+    {
+      "name": "TMProUltilitis",
+      "description": "Utilidades de texto TMP: typewriter, parsing de tags e paginacao via marcador <page>.",
+      "id": "com.ggtools.tmproultilitis",
+      "gitUrl": "https://github.com/GazGamesOrganization/GG.ToolsTmproUltilitis.git",
+      "dependencies": []
+    },
+    {
+      "name": "DocReader",
+      "description": "Leitura de CSV/TXT de multiplas fontes (persistentDataPath, streamingAssets, Resources).",
+      "id": "com.ggtools.docreader",
+      "gitUrl": "https://github.com/GazGamesOrganization/GG.ToolsDocReader.git",
+      "dependencies": []
+    },
+    {
+      "name": "PdfReader",
+      "description": "Renderiza PDF em runtime para Texture2D/Sprite com cache e carregamento progressivo.",
+      "id": "com.ggtools.pdfreader",
+      "gitUrl": "https://github.com/GazGamesOrganization/GGTools.PdfReader.git",
+      "dependencies": []
+    }
+  ]
+}
