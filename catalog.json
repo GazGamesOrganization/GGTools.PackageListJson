@@ -46,6 +46,15 @@
       ]
     },
     {
+      "name": "CameraTools",
+      "description": "Trava de aspect ratio: letterbox/pillarbox automatico, Background Camera e validacao da cena.",
+      "id": "com.ggtools.cameratools",
+      "gitUrl": "https://github.com/GazGamesOrganization/GGTools_CameraTools.git",
+      "dependencies": [
+        "com.ggtools.windowconfig"
+      ]
+    },
+    {
       "name": "Localization",
       "description": "Localizacao de texto TMP (CSV/XML) com TextLocalizationManager e painel na Config Window.",
       "id": "com.ggtools.localization",
